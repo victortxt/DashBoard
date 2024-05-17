@@ -24,8 +24,8 @@ btnSee.forEach((e)=> {
 
         document.querySelector('#titulo').innerHTML = title
         document.querySelector('#membros').innerHTML = membros
-        document.querySelector('#texto').innerHTML = imgCardUrl
-        document.querySelector('#image').innerHTML = textContent
+        document.querySelector('#texto').innerHTML = textContent
+        document.querySelector('#image').querySelector('#componentImg').src = imgCardUrl
     })
 
     fadeToggle(e)    
