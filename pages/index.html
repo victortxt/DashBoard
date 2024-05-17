@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/style.css">
     <script src="../JS/script.js" defer></script>
+    <script src="../JS/jquery.js"></script>
     <title>Dash board</title>
 </head>
 <body>
@@ -12,12 +13,12 @@
         <h1>Dash board</h1>
     </header>
     <main>
-        <section id="squareMain">
+        <section id="squareMain" >
             <div class="cardMain">
                 <div class="headerCard">
                     <div class="componentHeader">
-                        <h1>nome grupo</h1>
-                        <p>Nomes: Victor, ...</p>
+                        <h1 class="title">nome grupo</h1>
+                        <p class="membros">Nomes: Victor, ...</p>
                     </div>
                     <div class="componentHeader">
                         <button>QR-code</button>
@@ -25,10 +26,12 @@
                     </div>
                 </div>
                 <div class="imgCard">
-                    <img src="" alt="">
+                    <img src="" alt="" class="imgCardUrl">
                 </div>
                 <div class="textCard">
-                    <textarea name="" id="" readonly ></textarea>
+                    <textarea class="textAreaContent" name="" id="" readonly >
+                        teste
+                    </textarea>
                 </div>
             </div>
 
@@ -51,8 +54,29 @@
                 </div>
             </div>
         </section>
-        <section id="document">
-                teste
+
+
+        <section id="document" style="display: none;">
+            <div class="back">
+                <button id="backIN">
+                    Voltar
+                </button>
+            </div>
+            <div class="componentText">
+                Title
+            </div>
+
+            <div class="componentText">
+                Text
+            </div>
+
+            <div class="componentImg">
+                Images
+            </div>
+
+            <div class="componentText">
+                Links
+            </div>
         </section>
     </main>
 </body>
