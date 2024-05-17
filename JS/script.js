@@ -33,4 +33,11 @@ btnSee.forEach((e)=> {
 
 fadeToggle(btnBack)
 
+btnBack.addEventListener('click', () => {
+        document.querySelector('#titulo').innerHTML = ""
+        document.querySelector('#membros').innerHTML = ""
+        document.querySelector('#texto').innerHTML = ""
+        document.querySelector('#image').innerHTML = ""
+})
+
     
